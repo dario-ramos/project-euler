@@ -30,4 +30,5 @@ int main() {
 	} else {
 		cout << "FAILED (expected " << expectedAnswer << ", got " << answer << ")" << endl;
 	}
+    return 0;
 }
