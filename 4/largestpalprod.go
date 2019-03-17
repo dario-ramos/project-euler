@@ -21,6 +21,9 @@ func largestPalindromeProduct() uint64 {
 	var largestPalindromeProduct uint64 = 0
 	for a = 100; a <= 999; a++ {
 		for b = 100; b <= 999; b++ {
+			if a > b {
+				continue
+			}
 			var product uint64 = a * b
 			if isPalindrome(product) && product > largestPalindromeProduct {
 				largestPalindromeProduct = product
